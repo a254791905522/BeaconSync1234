@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050a12">
+    <title>Privacy Policy — BeaconSync</title>
+    <meta name="description" content="Privacy policy for BeaconSync. The App Store label discloses usage data for tracking and usage plus advertising data linked to you for third-party ads.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,480&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --night: #050a12;
+            --panel: rgba(10, 22, 36, 0.82);
+            --cyan: #5ce1ff;
+            --amber: #ffb020;
+            --foam: #e9f4ff;
+            --text: #c5d7e6;
+            --mute: #8eabc0;
+            --line: rgba(92, 225, 255, 0.18);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--foam);
+            min-height: 100vh;
+            background-color: var(--night);
+            background-image:
+                radial-gradient(ellipse 50% 36% at 0% -10%, rgba(26, 140, 255, 0.22), transparent 50%),
+                radial-gradient(ellipse 36% 28% at 100% 100%, rgba(255, 176, 32, 0.08), transparent 46%),
+                linear-gradient(rgba(92, 225, 255, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(92, 225, 255, 0.04) 1px, transparent 1px);
+            background-size: auto, auto, 52px 52px, 52px 52px;
+        }
+
+        a:focus-visible, .btn:focus-visible {
+            outline: 2px solid var(--cyan);
+            outline-offset: 3px;
+        }
+
+        .wrap {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 26px 22px 72px;
+        }
+
+        .bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 36px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .brand svg { width: 38px; height: 38px; flex: none; }
+
+        .brand strong {
+            font-family: "Chakra Petch", sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            font-size: 1.02rem;
+            text-transform: uppercase;
+        }
+
+        .brand small {
+            display: block;
+            margin-top: 1px;
+            color: var(--amber);
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+        }
+
+        .bar nav { display: flex; gap: 20px; font-weight: 700; font-size: 0.95rem; }
+        .bar nav a { color: var(--text); text-decoration: none; }
+        .bar nav a:hover, .bar nav a[aria-current="page"] { color: var(--cyan); }
+
+        .mast {
+            max-width: 44rem;
+            margin-bottom: 22px;
+        }
+
+        .mast .when {
+            font-family: "Chakra Petch", sans-serif;
+            color: var(--amber);
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-family: "Chakra Petch", sans-serif;
+            font-size: clamp(2rem, 4.5vw, 3.3rem);
+            line-height: 1.02;
+            letter-spacing: -0.03em;
+            margin-bottom: 14px;
+        }
+
+        .mast p {
+            color: var(--text);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .lamps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 22px 0 28px;
+        }
+
+        .lamp {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 14px 14px 16px;
+        }
+
+        .lamp .bulb {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--amber);
+            box-shadow: 0 0 10px var(--amber);
+            margin-right: 8px;
+        }
+
+        .lamp strong {
+            font-family: "Chakra Petch", sans-serif;
+            font-size: 0.98rem;
+        }
+
+        .lamp p {
+            margin-top: 8px;
+            color: var(--mute);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 210px 1fr;
+            gap: 28px;
+            align-items: start;
+        }
+
+        .toc {
+            position: sticky;
+            top: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-top: 6px;
+        }
+
+        .toc a {
+            color: var(--mute);
+            text-decoration: none;
+            font-size: 0.86rem;
+            font-weight: 700;
+            line-height: 1.35;
+        }
+
+        .toc a:hover { color: var(--cyan); }
+
+        article section {
+            padding: 22px 0 8px;
+            border-top: 1px solid var(--line);
+        }
+
+        article section:first-child { border-top: 0; padding-top: 0; }
+
+        article h2 {
+            font-family: "Chakra Petch", sans-serif;
+            font-size: 1.35rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+        }
+
+        article h2 span {
+            display: block;
+            color: var(--cyan);
+            font-size: 0.72rem;
+            letter-spacing: 0.16em;
+            margin-bottom: 6px;
+        }
+
+        article p, article li {
+            color: var(--text);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        article p + p { margin-top: 10px; }
+
+        article ul {
+            margin: 10px 0 0 1.15rem;
+        }
+
+        article li { margin-bottom: 6px; }
+
+        .end {
+            margin-top: 28px;
+            padding: 18px;
+            border-radius: 16px;
+            border: 1px solid var(--line);
+            background: rgba(26, 140, 255, 0.08);
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .end p { color: var(--text); line-height: 1.55; max-width: 40rem; }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            font-weight: 800;
+            border-radius: 8px;
+            padding: 12px 16px;
+            background: linear-gradient(180deg, #ffd06a, var(--amber));
+            color: #1a1204;
+            white-space: nowrap;
+        }
+
+        footer {
+            margin-top: 26px;
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+            color: var(--mute);
+            font-size: 0.84rem;
+        }
+
+        footer a { color: var(--cyan); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 800px) {
+            .lamps, .layout { grid-template-columns: 1fr; }
+            .toc { position: static; flex-direction: row; flex-wrap: wrap; gap: 10px 14px; }
+            .bar { align-items: flex-start; flex-wrap: wrap; row-gap: 14px; }
+            .bar nav { width: 100%; }
+            .end .btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="bar">
+            <a class="brand" href="index.html">
+                <svg viewBox="0 0 36 36" aria-hidden="true">
+                    <circle cx="18" cy="18" r="16" fill="none" stroke="#5ce1ff" stroke-width="1.4"/>
+                    <circle cx="18" cy="18" r="3.2" fill="#ffb020"/>
+                    <path d="M18 18 L33 9" stroke="#5ce1ff" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M18 18 L7 29" stroke="#9af6ff" stroke-width="1.4" stroke-linecap="round" opacity="0.75"/>
+                </svg>
+                <span>
+                    <strong>BeaconSync</strong>
+                    <small>Timing puzzle</small>
+                </span>
+            </a>
+            <nav>
+                <a href="index.html">The game</a>
+                <a href="privacy.html" aria-current="page">Privacy</a>
+            </nav>
+        </header>
+
+        <header class="mast">
+            <p class="when">Privacy policy · 28 September 2026</p>
+            <h1>How BeaconSync handles signals, ads, and tracking.</h1>
+            <p>
+                BeaconSync is a casual game about synchronizing rotating beacon beams. This policy explains the data practices disclosed for that app on the Apple App Store. It is written for players and families. It is not a legal opinion about the law where you live.
+            </p>
+        </header>
+
+        <div class="lamps">
+            <div class="lamp">
+                <strong><span class="bulb" aria-hidden="true"></span>Usage data</strong>
+                <p>The privacy label says usage data may be used to track you across other companies’ apps and websites.</p>
+            </div>
+            <div class="lamp">
+                <strong><span class="bulb" aria-hidden="true"></span>Linked to you</strong>
+                <p>Usage data may be collected and linked to your identity. Advertising also uses advertising data.</p>
+            </div>
+            <div class="lamp">
+                <strong><span class="bulb" aria-hidden="true"></span>Third-party ads</strong>
+                <p>The game is free and contains advertising. Linked data is disclosed for that advertising purpose.</p>
+            </div>
+        </div>
+
+        <div class="layout">
+            <nav class="toc" aria-label="On this page">
+                <a href="#scope">Scope</a>
+                <a href="#play">Play on device</a>
+                <a href="#usage">Usage data</a>
+                <a href="#ads">Advertising</a>
+                <a href="#tracking">Tracking</a>
+                <a href="#choices">Your controls</a>
+                <a href="#sharing">Who receives data</a>
+                <a href="#retention">How long it lasts</a>
+                <a href="#children">Younger players</a>
+                <a href="#rights">Requests</a>
+                <a href="#updates">Updates</a>
+            </nav>
+
+            <article>
+                <section id="scope">
+                    <h2><span>01</span>What this policy covers</h2>
+                    <p>
+                        This policy applies to BeaconSync as offered on the App Store for iPhone and iPad. The publisher is the seller identified on that product page. This site does not add a separate account, store, or personal contact channel.
+                    </p>
+                    <p>
+                        Apple distributes the app, processes downloads, and applies the privacy switches in iOS and iPadOS. Those platform activities follow Apple’s terms and Apple’s privacy policy. This page describes BeaconSync, not every service on your device.
+                    </p>
+                </section>
+
+                <section id="play">
+                    <h2><span>02</span>What happens while you line up beams</h2>
+                    <p>
+                        The game asks you to watch beacons that rotate at different speeds, tap one to give it a short speed boost, and bring the beams together on a shared point. That interaction runs on your device: the beams, the boosts, and the central convergence indicator are part of play.
+                    </p>
+                    <p>
+                        The App Store listing does not describe a player login, a public profile, chat, or a friend list. The disclosed data categories are usage data and advertising data, not a form where you type a name, phone number, photo, or home address. The label also does not list precise location or health information.
+                    </p>
+                    <p>
+                        If you delete BeaconSync, local app data stored by the system for that app is removed with it. Device backups you turn on yourself, including iCloud Backup, are handled by Apple under your backup settings.
+                    </p>
+                </section>
+
+                <section id="usage">
+                    <h2><span>03</span>Usage data the label discloses</h2>
+                    <p>
+                        Apple’s privacy label for BeaconSync states that Usage Data may be collected and linked to you. In Apple’s categories, usage data is information about how an app is used: product interaction such as launches, taps, and other feature activity, and related diagnostic or performance signals when a developer includes them in that category.
+                    </p>
+                    <p>
+                        For this title, that category sits next to a timing puzzle — opening the game, playing rounds of beacon boosts, and similar interaction with the app. The label does not itemize a private event list on this page, so this policy does not invent one. It does state the purposes Apple’s label attaches to that data: tracking, and third-party advertising.
+                    </p>
+                </section>
+
+                <section id="ads">
+                    <h2><span>04</span>Advertising inside the game</h2>
+                    <p>
+                        BeaconSync contains advertising. The privacy label says that, for third-party advertising, the app may collect and link Usage Data and Advertising Data to you. Advertising data is information about the ads you are shown and how you interact with them.
+                    </p>
+                    <p>
+                        Those disclosures mean ad partners can receive the categories named above in order to present and measure ads. This policy names that role — third-party advertising services — and does not publish a separate vendor roster. Practices can differ with the features you use and with your age, which is also how Apple describes app privacy labels.
+                    </p>
+                    <p>
+                        The game is offered as a free download. Advertising is part of the product as listed. Seeing an ad does not require you to create a BeaconSync account.
+                    </p>
+                </section>
+
+                <section id="tracking">
+                    <h2><span>05</span>Tracking across other companies</h2>
+                    <p>
+                        The same label states that Usage Data may be used to track you across apps and websites owned by other companies. Apple uses “tracking” for linking data collected from this app with data from other companies’ apps, websites, or offline properties for targeted advertising, or for sharing with a data broker.
+                    </p>
+                    <p>
+                        On iPhone and iPad, Tracking permission is the system control for that cross-app request. If you decline, the operating system is designed to limit the tracking the permission covers. Advertising that does not rely on that cross-app link can still appear, because the app contains ads and discloses advertising data for third-party advertising.
+                    </p>
+                </section>
+
+                <section id="choices">
+                    <h2><span>06</span>Controls on your Apple device</h2>
+                    <p>You can review the relevant switches in Settings:</p>
+                    <ul>
+                        <li>Privacy &amp; Security → Tracking, to decide whether apps may ask to track you across other companies’ apps and websites.</li>
+                        <li>Privacy &amp; Security → Apple Advertising, for Apple’s own ad personalization settings.</li>
+                        <li>Screen Time, if you want schedules or limits around play.</li>
+                    </ul>
+                    <p>
+                        Region and iOS version can change the exact labels. The App Store listing remains the place where the current privacy nutrition label for BeaconSync is published.
+                    </p>
+                </section>
+
+                <section id="sharing">
+                    <h2><span>07</span>Who can receive the disclosed categories</h2>
+                    <p>
+                        BeaconSync does not describe a mailing-list business, because contact information is not a category on its privacy label. It does disclose sharing in the advertising and tracking sense: usage data for tracking across other companies’ apps and websites, and usage data plus advertising data linked to you for third-party advertising.
+                    </p>
+                    <p>
+                        Recipients in those roles are advertising and measurement partners operating under that disclosure, plus Apple as the platform that delivers the app. This page does not claim a sale of unrelated personal records such as a contact book. Under some privacy laws, sharing data for cross-context advertising is treated similarly to a sale. Use the tracking controls above, and the request path below, if you want to object.
+                    </p>
+                    <p>
+                        International processing can follow from those partners and from Apple. The publisher does not operate a separate public data center described on this site. Where a partner processes usage or advertising data outside your country, they do so as part of the advertising and tracking practices this policy describes.
+                    </p>
+                </section>
+
+                <section id="retention">
+                    <h2><span>08</span>Retention</h2>
+                    <p>
+                        The publisher does not post a fixed archive timetable on this page. Usage and advertising data held for third-party advertising and tracking are kept only as needed for those disclosed purposes and for the periods those partners apply. Local play data associated with the app remains on the device until you remove the app, clear it, or a system backup rule says otherwise.
+                    </p>
+                    <p>
+                        There is no BeaconSync account profile on a publisher server for you to log into and empty. A deletion request is still available through the contact path in this policy if you believe linked usage or advertising data should be reviewed.
+                    </p>
+                </section>
+
+                <section id="children">
+                    <h2><span>09</span>Younger players</h2>
+                    <p>
+                        The App Store age rating is 4+. The game contains advertising, and the usage-data practices above are part of the published label. The listing does not add social posting, open chat, or an account children must create to synchronize beacons.
+                    </p>
+                    <p>
+                        A parent or guardian decides whether to install the game and can use Family Sharing, Ask to Buy, and Screen Time where those tools are available. If you believe a child sent personal information to the publisher outside ordinary play, contact the publisher through the App Store product page so the request can be reviewed.
+                    </p>
+                </section>
+
+                <section id="rights">
+                    <h2><span>10</span>Privacy requests</h2>
+                    <p>
+                        Depending on where you live, you may have rights to access, correct, delete, or export personal information, or to object to certain uses, including a right to opt out of share activity that a local law treats as a sale. BeaconSync does not publish a private email address or a personal website for those requests.
+                    </p>
+                    <p>
+                        Send privacy questions through the support options on the BeaconSync App Store listing. Include the right you want to use and enough detail to find the request, and skip sensitive documents you do not need to attach. The publisher will use that channel to review requests that relate to data the label says is collected.
+                    </p>
+                </section>
+
+                <section id="updates">
+                    <h2><span>11</span>When this policy changes</h2>
+                    <p>
+                        If a later version of BeaconSync starts collecting new categories, or stops using usage data for tracking or advertising, this page will be replaced with a dated revision and the App Store privacy label should be updated to match. Until that happens, the practice to rely on is the one in this text: on-device beam timing, with usage data disclosed for tracking, and usage data plus advertising data disclosed as linked to you for third-party advertising.
+                    </p>
+                    <p>The date under the title is the date of this wording.</p>
+                </section>
+            </article>
+        </div>
+
+        <div class="end">
+            <p>Privacy requests and the current store listing both live on the BeaconSync App Store page. That is also where you can download the game.</p>
+            <a class="btn" href="https://apps.apple.com/us/app/beaconsync/id6810985416?uo=4" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+        </div>
+
+        <footer>
+            <p>© 2026 BeaconSync. Privacy policy for the casual timing game.</p>
+            <p><a href="index.html">The game</a> · <a href="https://apps.apple.com/us/app/beaconsync/id6810985416?uo=4" target="_blank" rel="noopener noreferrer">App Store</a></p>
+        </footer>
+    </div>
+</body>
+</html>
